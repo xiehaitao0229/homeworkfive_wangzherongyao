@@ -57,9 +57,9 @@ $('#box').on('touchend',function (e) {
 window.addEventListener('deviceorientation', function(event) {
 
 	var gamma = event.gamma;
-	if (Math.abs(gamma) > 1) {
+	if (Math.abs(gamma) > 10) {
 		flag = false;
-		box.style.transform = 'rotateY(' + gamma * 3 + 'deg)';
+		box.style.transform = 'rotateY(' + gamma * 1 + 'deg)';
 	} else {
 		flag = true;
 	}
